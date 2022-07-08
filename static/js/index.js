@@ -30,30 +30,32 @@ const p_btns = document.querySelector(".p-btns")
 const p_btn = document.querySelectorAll(".p-btn");
 const p_img_element = document.querySelectorAll(".img-overlay")
 
-p_btns.addEventListener("click", (e) => {
-    const p_btn_clicked = e.target;
-    // console.log(p_btn_clicked)
-    p_btn.forEach((ele) => ele.classList.remove("p-btn-acive"));
-    p_btn_clicked.classList.add("p-btn-acive");
 
-    // To find the Number in the data atribute 
-    const btn_num = p_btn_clicked.dataset.btnNum;
-    // console.log(btn_num);
+//  FOR PROJECT BUTTON
+// p_btns.addEventListener("click", (e) => {
+//     const p_btn_clicked = e.target;
+//     // console.log(p_btn_clicked)
+//     p_btn.forEach((ele) => ele.classList.remove("p-btn-acive"));
+//     p_btn_clicked.classList.add("p-btn-acive");
 
-    const img_active = document.querySelectorAll(`.p-btn--${btn_num}`)
+//     // To find the Number in the data atribute 
+//     const btn_num = p_btn_clicked.dataset.btnNum;
+//     // console.log(btn_num);
 
-    p_img_element.forEach((elem) => {
-        elem.classList.add("p-img-active-not");
-    });
+//     const img_active = document.querySelectorAll(`.p-btn--${btn_num}`)
 
-
-    img_active.forEach((currnetElem) => {
-
-        currnetElem.classList.remove("p-img-active-not");
-    })
+//     p_img_element.forEach((elem) => {
+//         elem.classList.add("p-img-active-not");
+//     });
 
 
-})
+//     img_active.forEach((currnetElem) => {
+
+//         currnetElem.classList.remove("p-img-active-not");
+//     })
+
+
+// })
 
 
 
