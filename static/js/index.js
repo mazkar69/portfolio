@@ -68,7 +68,7 @@ const workObserver = new IntersectionObserver((entries) => {
     }
     // Animate number
     const counterNum = document.querySelectorAll(".counter-numbers");
-    const speed = 200;
+    const speed = 12.5;
     counterNum.forEach((currnetElem) => {
         const updateNumber = () => {
             const targetNumber = parseInt(currnetElem.dataset.number);
@@ -83,7 +83,7 @@ const workObserver = new IntersectionObserver((entries) => {
 
                 currnetElem.innerText = `${initialNum + incrementNumber}+`;
 
-                setTimeout(updateNumber, 10);
+                setTimeout(updateNumber, 150);
 
             }
         }
