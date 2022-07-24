@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section {
+        max-width: 60rem;
+        margin: auto;
+        border: 1px solid rgb(199, 199, 199);
+        padding: 2rem;
+        /* margin: 4rem auto; */
+
+    }
+
+    h2 {
+        text-transform: capitalize;
+        font-size: 2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 3rem .5rem;
+    }
+
+    label {
+        font-size: 1.3rem;
+
+    }
+
+    input[type="text"] {
+        font-size: 1.2rem;
+        padding: 5px;
+        color: rgb(61, 61, 61);
+        background-color: rgb(255, 255, 232);
+        outline: none;
+        border: none;
+        border: 1px solid black;
+    }
+
+    textarea {
+        font-size: 1.2rem;
+        padding: 5px;
+        color: rgb(61, 61, 61);
+        background-color: lightyellow;
+        min-height: 10rem;
+
+    }
+
+    input[type="submit"] {
+        font-size: 1.2rem;
+        padding: 5px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(80, 80, 222);
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100px;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Media Query */
+    @media (max-width:600px) {
+        section {
+
+            padding: 1rem;
+
+
+        }
+        h2 {
+        font-size: 1.5rem;
+
+    }
+
+    form {
+        gap: .5rem;
+        padding: 2rem .2rem;
+    }
+
+    label {
+        font-size: 1rem;
+
+    }
+
+    input[type="text"] {
+        font-size: 1rem;
+        padding: 3px;
+    }
+
+    textarea {
+        font-size: 1rem;
+    }
+
+    input[type="submit"] {
+        font-size: 1rem;
+
+    }
+
+
+    }
+    @media (max-width:400px) {
+        section {
+
+            padding: .5rem;
+
+
+        }
+        h2 {
+        font-size: 1rem;
+
+    }
+
+    form {
+        gap: .5rem;
+        padding: 2rem .2rem;
+    }
+
+    label {
+        font-size: .5rem;
+
+    }
+
+    input[type="text"] {
+        font-size: .5rem;
+        padding: 3px;
+    }
+
+    textarea {
+        font-size: .5rem;
+    }
+
+    input[type="submit"] {
+        font-size: .5rem;
+
+    }
+
+
+    }
+</style>
+
+<body>
+    <section>
+        <h2>create New Blog Post:</h2>
+        <form action="/create-new-post" method="post">
+            <div class="box" id="box-1">
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" placeholder="" required>
+            </div>
+            <div class="box" id="box-2">
+                <label for="tags">Tags:</label>
+                <input type="text" name="tags" id="tags" required>
+            </div>
+            <div class="box" id="box-3">
+                <label for="url">URL:</label>
+                <input type="text" name="url" id="url" required>
+            </div>
+            <div class="box" id="box-4">
+                <label for="description">Description:</label>
+                <input type="text" name="description" id="description" required>
+            </div>
+            <div class="box" id="box-5">
+                <label for="contant">Contant:</label>
+                <textarea name="contant" id="contant" required
+                    placeholder="Write contant here .. You can use html tags also."></textarea>
+            </div>
+            <div class="box" id="box-6">
+                <input type="submit" name="submit" id="submit" value="Post">
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>

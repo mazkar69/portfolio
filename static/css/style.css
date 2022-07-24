@@ -344,6 +344,7 @@ span {
   width: 70%;
 
 }
+
 #progress-bar-6::before {
 
   width: 65%;
@@ -379,6 +380,7 @@ span {
 #progress-bar-4 span {
   left: 81%;
 }
+
 #progress-bar-5 span {
   left: 66%;
 }
@@ -786,6 +788,59 @@ span {
   display: none;
 }
 
+
+
+/* ----------------------Blog post secction------------------------- */
+
+.section-blog span {
+  color: var(--para); 
+}
+
+.section-blog h3 {
+  font-size: 3rem;
+}
+
+.section-blog {
+  background-color: #fefefe !important;
+
+
+}
+
+.section-blog .container {
+  margin-top: 5rem !important;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5rem;
+
+}
+
+.blog-post {
+  padding: 1rem 2rem;
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  flex-direction: column;
+  max-width: 110rem;
+  margin: auto;
+  background-color: white;
+  box-shadow: var(--shadow);
+  background-color: white;
+}
+
+.blog-post a {
+  font-size: 2rem;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+                      /* media Query */
+/* ---------------------------------------------------------- */
+
 /* Media Queries */
 
 @media (max-width: 1160px) {
@@ -941,7 +996,7 @@ span {
   .common-heading::before {
     top: 40px;
   }
-  
+
   .common-heading::after {
     top: 45px;
   }
@@ -968,48 +1023,55 @@ span {
   .counter-numbers {
     font-size: 2.8rem;
   }
-  .section-work-data .grid{
+
+  .section-work-data .grid {
     column-gap: 2rem;
 
   }
-  .section-services .grid-three-column{
+
+  .section-services .grid-three-column {
     grid-template-columns: 1fr;
   }
-  
+
   .section-freelancing h2 {
     font-size: 3.4rem;
-  
+
   }
-  
+
   .section-freelancing span {
     font-size: 3.4rem;
 
-  
+
   }
-  
+
   .section-freelancing h2,
   .section-freelancing p {
 
     margin-bottom: 1.3rem;
   }
-  
-  .section-contact-main{
+
+  .section-contact-main {
     padding: 0 1.3rem;
   }
-  .section-contact-main .grid-two-column{
+
+  .section-contact-main .grid-two-column {
     grid-template-columns: 1fr;
   }
+
   .hero-heading {
 
     font-size: 4.8rem;
   }
+
   .hero-img {
     max-width: 70%;
   }
+
   .common-heading {
     font-size: 3.5rem;
 
   }
+
   .img-overlay .common-heading {
     font-size: 2.5rem;
   }

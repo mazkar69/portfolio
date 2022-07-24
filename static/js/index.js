@@ -96,6 +96,11 @@ const workObserver = new IntersectionObserver((entries) => {
     root: null,
     threshold: 0,
 })
-
-workObserver.observe(workSection)
+try {
+    
+    workObserver.observe(workSection)
+} catch (error) {
+    //console.log(error)
+    
+}
 

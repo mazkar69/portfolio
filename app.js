@@ -16,6 +16,15 @@ app.get("/",(req,res)=>{
     
 })
 
+app.get("/blog",(req,res)=>{
+    res.render("blog")
+    
+})
+app.get("/create-new-post",(req,res)=>{
+    res.render("create-post")
+    
+})
+
 app.listen(port,()=>{
     console.log("Running at port ",port);
 })
