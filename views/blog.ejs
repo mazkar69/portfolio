@@ -52,43 +52,21 @@
           </div>
         <div class="container">
 
-            <div class="blog-post">
-                <span>2022-7-1</span>
-                <h3>Pointers in c++ how it work</h3>
-                <p>Complete guide to pointer in c and c++ pointer with string array multidimention array. pointer of pointer how pointer works in class and object what is arrow operator and why we use arrow operator in c++.
-                </p>
-                <a href="/blog">read more..</a>
-            </div>
-            <div class="blog-post">
-                <span>2022-7-1</span>
-                <h3>Pointers in c++ how it work</h3>
-                <p>Complete guide to pointer in c and c++ pointer with string array multidimention array. pointer of pointer how pointer works in class and object what is arrow operator and why we use arrow operator in c++.
-                </p>
-                <a href="/blog">read more..</a>
-            </div>
-            <div class="blog-post">
-                <span>2022-7-1</span>
-                <h3>Pointers in c++ how it work</h3>
-                <p>Complete guide to pointer in c and c++ pointer with string array multidimention array. pointer of pointer how pointer works in class and object what is arrow operator and why we use arrow operator in c++.
-                </p>
-                <a href="/blog">read more..</a>
-            </div>
-            <div class="blog-post">
-                <span>2022-7-1</span>
-                <h3>Pointers in c++ how it work</h3>
-                <p>Complete guide to pointer in c and c++ pointer with string array multidimention array. pointer of pointer how pointer works in class and object what is arrow operator and why we use arrow operator in c++.
-                </p>
-                <a href="/blog">read more..</a>
-            </div>
+            <% posts.forEach((post)=>{ %>
+                
+                <div class="blog-post">
+                    <span><%= post.upload_time %></span>
+                    <h3><%= post.title %></h3>
+                    <p><%=post.description %></p>
+                    <a href=<%= `/blog/${post.url}` %>>read more..</a>
+                </div>
+
+            <% }) %>
 
 
         </div>
 
     </section>
-
-
-
-
 
     <!-- Our footer section -->
 

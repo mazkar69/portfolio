@@ -17,8 +17,8 @@
     section {
         max-width: 60rem;
         margin: auto;
-        border: 1px solid rgb(199, 199, 199);
-        padding: 2rem;
+        /* border: 1px solid rgb(199, 199, 199); */
+        padding: 2rem 3rem;
         /* margin: 4rem auto; */
 
     }
@@ -42,7 +42,7 @@
     }
 
     input[type="text"] {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         padding: 5px;
         color: rgb(61, 61, 61);
         background-color: rgb(255, 255, 232);
@@ -52,7 +52,7 @@
     }
 
     textarea {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         padding: 5px;
         color: rgb(61, 61, 61);
         background-color: lightyellow;
@@ -64,10 +64,15 @@
         font-size: 1.2rem;
         padding: 5px;
         color: rgb(255, 255, 255);
-        background-color: rgb(80, 80, 222);
+        background-color: rgb(123, 123, 184);
         border-radius: 5px;
+        border: none;
         cursor: pointer;
-        width: 100px;
+        /* width: 100px; */
+    }
+    input[type="submit"]:hover{
+        background-color: rgb(99, 99, 171);
+        
     }
 
     .box {
@@ -113,45 +118,7 @@
     }
 
 
-    }
-    @media (max-width:400px) {
-        section {
-
-            padding: .5rem;
-
-
-        }
-        h2 {
-        font-size: 1rem;
-
-    }
-
-    form {
-        gap: .5rem;
-        padding: 2rem .2rem;
-    }
-
-    label {
-        font-size: .5rem;
-
-    }
-
-    input[type="text"] {
-        font-size: .5rem;
-        padding: 3px;
-    }
-
-    textarea {
-        font-size: .5rem;
-    }
-
-    input[type="submit"] {
-        font-size: .5rem;
-
-    }
-
-
-    }
+}
 </style>
 
 <body>
