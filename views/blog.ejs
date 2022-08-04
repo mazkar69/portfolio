@@ -55,7 +55,8 @@
             <% posts.forEach((post)=>{ %>
                 
                 <div class="blog-post">
-                    <span><%= post.upload_time %></span>
+                    <% date = post.upload_time.toString(); %>
+                    <span><%=date.slice(0,15)%></span>
                     <h3><%= post.title %></h3>
                     <p><%=post.description %></p>
                     <a href=<%= `/blog/${post.url}` %>>read more..</a>

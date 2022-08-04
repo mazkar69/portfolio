@@ -4,6 +4,7 @@ const path = require("path")
 const ejs = require("ejs")
 require("./db-conn/conn");
 const Post = require("./db-conn/posts");
+const { reset } = require("nodemon");
 const port = process.env.PORT || 5000;
 
 // Seting the static file
@@ -24,7 +25,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/blog", async (req, res) => {
-    const result = await Post.find();
+    const result = await Post.find().sort({"upload_time":-1});
 
     res.render("blog", { posts: result })
 
@@ -34,6 +35,8 @@ app.get("/blog/:url", async (req, res) => {
     try {
         const url = req.params.url;
         const result = await Post.findOne({ url });
+        const stringDate = result.upload_time.toString();
+        const date = stringDate.slice(0,15);
         const html = `<!DOCTYPE html>
     <html lang="en">
     
@@ -132,7 +135,8 @@ app.get("/blog/:url", async (req, res) => {
         <section class="section section-blog-page">
             <div class="container">
                 <div class="post">
-                    <span>${result.upload_time}</span>
+
+                    <span>${date}</span>
                     <h1>${result.title}</h1>
                     ${result.contant}
 
