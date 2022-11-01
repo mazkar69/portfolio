@@ -382,11 +382,11 @@ span {
 }
 
 #progress-bar-5 span {
-  left: 66%;
+  left: 61%;
 }
 
 #progress-bar-6 span {
-  left: 61%;
+  left: 66%;
 }
 
 
@@ -404,7 +404,7 @@ span {
 }
 
 /*==============================================
-              Portfolio SECTION START
+              ACHIEVEMENT SECTION START
 ================================================ */
 
 .section-portfolio {
@@ -449,48 +449,33 @@ span {
 }
 
 .img-overlay .overlay {
-  position: absolute;
+  position: absolute;     
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: var(--gradient);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* opacity: .5; */
-  transform: translateY(100%);
-  transition: all 0.5s linear;
+  justify-content: space-around;
+  align-items: flex-end;
   border-radius: 7px;
 }
-
-.img-overlay:hover>.overlay {
-  transform: translateY(0);
-  opacity: 0.8;
-  cursor: pointer;
-
-
-}
-
-.img-overlay .common-heading {
-  margin: 0px;
+.overlay-btn {
+  font-size: 2.3rem;
+  padding: .8rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: rgb(46, 126, 172);
   color: white;
-  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all .3s linear;
 }
 
-/* .p-btn:hover{
-  transform: translateY(-1rem) ;
+.overlay-btn:hover{
 
-} */
-.p-btn-acive {
   transform: translateY(-1rem);
-
 }
 
-.p-img-active-not {
-  display: none;
 
-}
 
 /*==============================================
               work data SECTION START
@@ -536,8 +521,10 @@ span {
   text-align: center;
   box-shadow: var(--shadow);
   border-radius: 5px;
-  padding: 6.4rem 3.4rem;
+  padding: 1rem 3.4rem;
   transition: all 0.2s linear;
+  position: relative;
+  background-color: rgb(250, 250, 250);
 }
 
 .service-box:hover {
@@ -545,6 +532,19 @@ span {
 
 }
 
+.service-box img{
+  width: 100%;
+}
+.certificate-para{
+  /* background-color: whitesmoke; */
+  background-color: rgb(250, 250, 250);
+  transform: translatey(-5rem);
+  border-radius: 2rem 2rem 0 0;
+  
+  padding: 1.5rem;
+}
+
+/* 
 .service-icon {
   width: 8rem;
   height: 8rem;
@@ -594,7 +594,7 @@ span {
   text-transform: capitalize;
   margin-top: 3rem;
   margin-bottom: 1rem;
-}
+} */
 
 /*==============================================
               Freelancing SECTION START
@@ -908,6 +908,10 @@ span {
     pointer-events: all;
   }
 
+  .overlay-btn{
+    font-size: 2rem;
+    padding: .7rem 1.5rem;  
+  }
 
 
 
@@ -985,6 +989,10 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .overlay-btn{
+    font-size: 1.5rem;
+    padding: .5rem 1rem;  
+  }
 }
 
 @media (max-width: 460px) {
@@ -1074,6 +1082,11 @@ span {
 
   .img-overlay .common-heading {
     font-size: 2.5rem;
+  }
+
+  .overlay-btn{
+    font-size: 1.2rem;
+    padding: .5rem .8rem;  
   }
 
 }
