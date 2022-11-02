@@ -234,7 +234,9 @@ span {
   background-color: var(--bg);
 
 }
-
+.bio-col{
+  font-weight: bold;
+}
 .section-hero-data {
   display: flex;
   flex-direction: column;
@@ -448,6 +450,7 @@ span {
 
 }
 
+
 .img-overlay .overlay {
   position: absolute;     
   left: 0;
@@ -469,6 +472,7 @@ span {
   border: none;
   transition: all .3s linear;
 }
+
 
 .overlay-btn:hover{
 
