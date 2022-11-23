@@ -12,12 +12,15 @@ menu.addEventListener("click", () => {
     menu.style = "display:none";
     close.style.display = "block";
 })
-close.addEventListener("click", () => {
+close.addEventListener("click",hideNav)
+
+
+function hideNav()
+{
     headerElem.classList.toggle("active")
     menu.style = "display:block";
     close.style.display = "none";
-})
-
+}
 
 
 /*------------------------------------------
